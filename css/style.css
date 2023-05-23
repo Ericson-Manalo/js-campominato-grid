@@ -17,6 +17,21 @@ h1{
 
 main{
     background-color: #7fffd4;
-    height: 600px;
+    height: 700px;
     width: 100%;
+}
+
+div.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+}
+
+div.grid .cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
 }
