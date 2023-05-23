@@ -1,15 +1,37 @@
 
-function createElement (tagName, className, numberElement){
+function createElement (tagName, className){
     const cellElement = document.createElement(tagName);
     cellElement.className = className;
     return cellElement;
+
 }
 
 const gridElement = document.getElementById('grid');
 
+//creazione di n. 100 celle con condizione for
+for ( let i = 1; i < 101; i++){
 
-for ( let i = 0; i < 100; i++){
+    //creo variabile in cui creerò il tagname e la classe 
+    const actualCell = createElement('div', 'cell');
 
-    gridElement.appendChild(createElement('div', 'cell'));
+    //creo una seconda variabile div
+    const numberElement = document.createElement('div');
+
+    //al nuovo elemento metto dentro i numeri dell'indice che crescerà di +1 ad ogni ciclo
+    numberElement.append(i);
+
+    //creo una classe per centrarla
+    numberElement.classList.add('centered-number')
+
+    //all'interno della variabile che richiama il div con classe grid metto i nuovi elementi creati (in questo caso div con classe cell)
+    gridElement.appendChild(actualCell);
+
+    //all'interno della cella creata metto i numeri
+    actualCell.appendChild(numberElement);
+    
+    
 }
+
+
+
 

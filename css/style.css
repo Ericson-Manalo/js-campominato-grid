@@ -35,3 +35,9 @@ div.grid .cell{
     height: calc(100% / 10);
     border: 1px solid black;
 }
+
+div.grid .centered-number{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
