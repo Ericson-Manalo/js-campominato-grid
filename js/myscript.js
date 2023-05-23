@@ -1,15 +1,20 @@
 
-function createElement (tagName, className){
-    const cellElement = document.createElement(tagName);
-    cellElement.className = className;
-    return cellElement;
 
-}
 
 const gridElement = document.getElementById('grid');
 
-//creazione di n. 100 celle con condizione for
+const button = document.querySelector('button');
+button.addEventListener('click', function(){
+
+
+    //creazione di n. 100 celle con condizione for
 for ( let i = 1; i < 101; i++){
+
+    function createElement (tagName, className){
+        const cellElement = document.createElement(tagName);
+        cellElement.className = className;
+        return cellElement;
+    }
 
     //creo variabile in cui creerò il tagname e la classe 
     const actualCell = createElement('div', 'cell');
@@ -39,6 +44,11 @@ for ( let i = 1; i < 101; i++){
     
     
 }
+
+
+})
+
+
 
 
 
