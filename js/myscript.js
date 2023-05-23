@@ -23,6 +23,14 @@ for ( let i = 1; i < 101; i++){
     //creo una classe per centrarla
     numberElement.classList.add('centered-number')
 
+
+    //aggiunto al click il cambio di colore delle celle
+    actualCell.addEventListener('click', function(){
+        actualCell.classList.toggle('clicked');
+
+    });
+
+
     //all'interno della variabile che richiama il div con classe grid metto i nuovi elementi creati (in questo caso div con classe cell)
     gridElement.appendChild(actualCell);
 
