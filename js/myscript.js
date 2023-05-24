@@ -6,6 +6,7 @@ const gridElement = document.getElementById('grid');
 const button = document.querySelector('button');
 button.addEventListener('click', function(){
     
+    //resetta la griglia
     gridElement.innerHTML = "";
 
 
