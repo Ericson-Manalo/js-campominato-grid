@@ -5,6 +5,8 @@ const gridElement = document.getElementById('grid');
 
 const button = document.querySelector('button');
 button.addEventListener('click', function(){
+    
+    gridElement.innerHTML = "";
 
 
     //creazione di n. 100 celle con condizione for
